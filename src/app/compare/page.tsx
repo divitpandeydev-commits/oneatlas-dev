@@ -140,7 +140,7 @@ export default async function Compare({ searchParams }: CompareProps) {
               <tr key={row.label} className={i % 2 === 0 ? "bg-white" : "bg-slate-50/60"}>
                 <th className="p-4 text-left font-semibold text-slate-600">{row.label}</th>
                 {models.map((m) => (
-                  <td key={m.id} className="p-4 align-top">
+                  <td key={m.id} className="p-4 align-top font-medium text-slate-900">
                     {row.render(m.id)}
                   </td>
                 ))}
